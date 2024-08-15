@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Regestration Form</title>
+  </head>
+  <body>
+    <h2 align="center">Student Regestration Form</h2>
+    <form action="" align="center">
+      <fieldset>
+        <legend>User Information Form</legend>
+
+        <table align="center">
+          <tr>
+            <td><label for="">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                pattern="[A-Z a-z]{2,}"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                name=""
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="pass">password</label></td>
+            <td>
+              <input
+                type="password"
+                id="pass"
+                placeholder="Enter password"
+                maxlength="8 "
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone No.:</label></td>
+            <td>
+              <input
+                type="number"
+                id="phone"
+                placeholder="Enter Mobile Number"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              <label for="male">Male</label>
+              <input
+                type="radio"
+                name="Gender"
+                id="male"
+                required
+              />&nbsp;&nbsp;&nbsp;
+              <label for="female">Female</label>
+              <input type="radio" name="Gender" id="female" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+              <input
+                type="number"
+                id="age"
+                required
+                min="18"
+                max="60"
+                step="2"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="lang">Language:</label></td>
+            <td>
+              <select>
+                <option value="" id="lang">Select your Language</option>
+                <option id="lang">Marathi</option>
+                <option id="lang">Hindi</option>
+                <option id="lang">English</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="zip">Zip Code:</label></td>
+            <td><input type="number" id="zip" placeholder="Zip code" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="about">About:</label></td>
+            <td>
+              <textarea
+                name=""
+                id=""
+                rows="2"
+                cols="21"
+                id="about"
+                placeholder="Enter About"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><input type="submit" value="Register" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
