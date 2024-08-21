@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Form</title>
+  </head>
+  <body>
+    <h2>Working With Form</h2>
+
+    <form action="" method="post" align="center">
+      <fieldset>
+        <legend align="center"><strong>Form Structure</strong></legend>
+
+        <label for="uid">Userid</label>
+        <input
+          type="hidden"
+          id="uid"
+          name="userid"
+          value="12345"
+        /><br /><br /><br />
+
+        <label for="name">Name :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        /><br /><br /><br />
+
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="e.g. abc123@gmail.com"
+        /><br /><br /><br />
+
+        <label for="pass">Password :</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Enter password"
+        /><br /><br /><br />
+
+        <label for="phone">phone :</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="enter phone no"
+        /><br /><br /><br />
+
+        <label for="phone">Tel Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="02550-266008"
+        /><br /><br /><br />
+
+        <label for="age">Age :</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="enter your age"
+          min="18"
+          max="60"
+        /><br /><br /><br />
+
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+        <input
+          type="radio"
+          name="gender"
+          id="Transgender"
+          value="Transgender"
+        />
+        <label for="Transgender">Transgender</label><br /><br /><br />
+
+        <label for="appt">Appointment time:</label>
+        <input type="time" id="appt" name="appt" /><br /><br /><br />
+
+        <label for="appdate">Appointment date :</label>
+        <input type="date" id="appdate" name="appdate" /><br /><br /><br />
+
+        <label for="meeting">Meeting Date and Time:</label>
+        <input
+          type="datetime-local"
+          id="meeting"
+          name="meeting"
+        /><br /><br /><br />
+
+        <label for="lang">Select your Language :</label>
+        <input type="checkbox" name="lang" id="lang" value="marathi" />
+        <label for="marathi">Marathi</label>
+        <input type="checkbox" name="lang" id="lang" value="hindi" />
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="lang" value="english" />
+        <label for="english">English</label><br /><br /><br />
+
+        <label for="cource">Which Cource You Prefer :</label>
+        <select name="cource" id="cource">
+          <option value="">Select</option>
+          <option value="Java">Java Full Stack</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Mern">Mern Stack</option>
+          <option value="Mean">Mean Stack</option></select
+        ><br /><br /><br />
+
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor" /><br /><br /><br />
+
+        <label for="website">Your Linkedin Website:</label>
+        <input type="url" id="website" name="website" /><br /><br /><br />
+
+        <label for="file">Upload your resume :</label>
+        <input type="file" id="file" name="file" /><br /><br /><br />
+
+        <label for="file">Upload your Image :</label>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept="Image/*"
+        /><br /><br /><br />
+
+        <label for="volume">Volume:</label>
+        <input
+          type="range"
+          id="volume"
+          name="volume"
+          min="0"
+          max="100"
+        /><br /><br /><br />
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" /><br /><br /><br />
+
+        <label for="about">About :</label>
+        <textarea
+          name=""
+          id=""
+          cols="50"
+          rows="10"
+          placeholder="Enter About Yourself"
+        ></textarea
+        ><br /><br /><br />
+
+        <input type="reset" id="about" value="Reset" /><br /><br />
+
+        <input type="submit" value="Submit" /><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
